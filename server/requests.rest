@@ -1,0 +1,30 @@
+GET http://localhost:3000/api/books
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQXJ0IiwiaWF0IjoxNjM0MjQ5MjUxLCJleHAiOjE2MzQyNDkyNjZ9.8f0xTeomA0BvZ9AM52iPEsyOzwC8xoM9PtRn0i8qnWY
+
+###
+
+POST http://localhost:3000/api/auth/refreshToken
+Content-Type: application/json
+
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQXJ0IiwiaWF0IjoxNjM0MjQ5MTc2fQ.-6QidLXb-Mk7Kgc276b5lqNCWyfFJp9eDK_nsFLMldk"
+}
+
+
+###
+
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "Art"
+}
+
+###
+
+DELETE Http://localhost:3000/api/auth/logout
+Content-Type: application/json
+
+{
+  "token": ""
+}
